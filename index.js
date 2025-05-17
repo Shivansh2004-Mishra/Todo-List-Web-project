@@ -6,7 +6,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/todo");
+mongoose.connect("mongodb://localhost:0.0.0.0/todo");
 const trySchema = new mongoose.Schema({
   name: String
 });
